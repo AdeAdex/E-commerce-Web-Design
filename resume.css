@@ -1,0 +1,418 @@
+*{
+   margin: 0;
+   padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: gray;
+  width: 100%;
+}
+header{
+	width: 100%;
+	height: 9em;
+	background:
+    linear-gradient(cyan, transparent), 
+    linear-gradient(to top left, lime, transparent), 
+	linear-gradient(to top right, yellow, transparent), 
+	linear-gradient(to bottom left, yellow, transparent), 
+	linear-gradient(to bottom right, red, transparent);
+	background-blend-mode: saturation;
+	filter: overlay;
+}
+/*a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: block;
+}
+a:first-child{
+	-webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+	clip-path: polygon(0 0, 0 100vh, 100vh);
+	background: green;
+}
+a:last-child{
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh);
+	clip-path: polygon(0 0, 100%, 100vh);
+	background: green;
+}*/
+
+.view{
+	bottom: 0%;
+	left: 0%;
+	position: absolute;
+	right: 0;
+	top: -80px;
+	transform: skewY(6deg);
+	background-color: skyblue;
+	width: 100%;
+	height: 30%;
+}
+.right{
+	left: 40%;
+	right: 0%;
+	background-color: blue;
+}
+.left{
+	left: 0%;
+	right: 25%;
+	background-color: green;
+}
+.left, .right{
+	bottom: 8px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.divider{
+	position: absolute;
+	right: 5%;
+	top: -5%;
+	z-index: 1;
+	background-color: red;
+}
+
+#maincontainer{
+	background-color: none;
+	width: 100%;
+	margin-top: 10em;
+}
+
+#leftpan{
+	float: left;
+	width: 30%;
+	background-color: #040b4f;
+	color: white;
+	border-radius: 5px;
+	border-width: 10%;
+	border-top: 15px solid skyblue;
+	border-left: 8px solid skyblue;
+	border-right: 8px solid skyblue;
+	border-bottom: 15px solid skyblue;
+	margin-top: -85px;
+}
+.propic{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-color: white;
+	margin: -55px 5px 5px 10%;
+	display: grid;
+	position: absolute;
+
+
+}
+img{
+	width: 142px;
+	height: 142px;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .propic{
+    width: 90px;
+    height: 90px;
+    margin: -35px 5px 5px 20px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+.jobtitle{
+	text-align: center;
+	margin-bottom: 75px;
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+.jobtitle{
+	text-align: center;
+	margin-bottom: 75px;
+	margin-top: 60px;
+	}
+}
+
+.headline{
+	border: 1px solid white;
+	background-color: darkred;
+	color: cyan;
+	border-radius: 15px;
+	width: 60%;
+	text-align: center;
+	font-size: x-large;
+	margin: 30px 0px 15px 80px;
+}
+@media screen and (max-width: 600px) {
+  .headline{
+    width: 100%;
+    border: 1px solid white;
+	background-color: darkred;
+	color: cyan;
+	border-radius: 15px;
+	text-align: center;
+	font-size: x-large;
+	margin: 20px 0px 15px 1px;
+  }
+}
+.ulul, .ululco{
+	padding: 2px 50px;
+}
+.ululco li{
+	padding-bottom: 10px;
+}
+.contacts{
+	width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .ulul, .lili{
+    width: 95%;
+    padding: 2px 8px 2px 2px;
+  }
+}
+
+.lili{
+	list-style-type: none;
+}
+@media screen and (max-width: 600px) {
+  .ululco{
+    width: 100%;
+    overflow: scroll;
+    height: 17.3em;
+    padding: 2px 2px;
+  }
+}
+.skills{
+	margin-bottom: 60px;
+}
+
+.s{
+	display: block;
+}
+.sk{
+	padding: 2px 50px;
+	width: 30%;
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .sk{
+    width: 100%;
+    padding: 2px 2px;
+    text-align: center;
+  }
+}
+
+.button{
+	width: 60%;
+	background-color: white;
+	margin-left: 15px;
+	height: 8px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .button{
+    width: 80%;
+    margin-left: 10px;
+    margin-right: ;
+  }
+}
+.aa{
+	width: 40%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+
+.b{
+	width: 45%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.c{
+	width: 25%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.d{
+	width: 55%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.e{
+	width: 58%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.f{
+	width: 37%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.g{
+	width: 55%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.h{
+	width: 48%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.ii{
+	width: 30%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+.j{
+	width: 59%;
+	background-color: yellow;
+	color: yellow;
+	height: 8px;
+	margin-left: -60%;
+
+}
+
+@media screen and (max-width: 600px) {
+  .aa, .b, .c, .d, .e, .f, .g, .h, .ii, .j{
+  margin-left: -80%;
+  }
+}
+
+
+.azz{
+	justify-content: space-between;
+	padding: 2px 50px;
+	display: flex;
+}
+
+.gap{
+	margin-bottom: 102px;
+}
+
+
+
+
+
+
+
+#rightpan{
+	float: right;
+	width: 70%;
+	background-color: white;
+	margin-top: -35px;
+	border-bottom: 10px solid skyblue;
+	border-bottom-left-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  #rightpan{
+    margin-top: -50px;
+  }
+}
+
+.rightmain{
+	margin-top: 60px;
+}
+h3{
+	width: 18%;
+	background-color: #040b4f;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-left: -8px;
+	padding-left: 20px;
+	color: aqua;
+	margin-bottom: 7px;
+}
+
+@media screen and (max-width: 600px) {
+  h3{
+    width: 60%;
+  }
+}
+
+.dot{
+	border-radius: 10px;
+	height: 12px;
+	width: 12px;
+	background-color: darkred;
+	float: right;
+	margin-right: 10px;
+	margin-top: 4.5px;
+}
+.summ{
+	width: 60%;
+	background-color: ;
+	padding-left: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .summ{
+    overflow: scroll;
+    height: 10em;
+  }
+}
+
+h4{
+	padding-left: 25px;
+	font-weight: bolder;
+}
+h5{
+	padding-left: 25px;
+	font-style: oblique;
+}
+.wkexpinfo{
+	height: auto;
+}
+.wkexpul{
+	padding-left: 25px;
+	padding-bottom: 8px;
+	font-size: small;
+}
+.wkexpli{
+	margin-left: 100px;
+	font-size: large;
+}
+.wkexplii{
+	margin-left: 100px;
+	font-size: small;
+	list-style-type: none;
+}
+
+.summary, .archievement, .wkexp, .edu{
+	padding-bottom: 30px;
+}

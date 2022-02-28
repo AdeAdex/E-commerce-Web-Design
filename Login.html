@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login page</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="container">
+		<hr>
+		<header>
+			<h3>
+				<img src="C:\Users\amole\Desktop\Html\adeadex.png" alt="image not found">
+			</h3>
+		</header>
+		<hr>
+			<fieldset>
+				<legend> Please Login to your Account</legend>
+				<form name="" action="html_form_submit.asp" method="post">
+					<div id="user">
+						<label for="username" class="username"> username:</label>
+							<button class="btn"><i class="fas fa-lock" style="font-size: ; color: green"></i></button><input type="text" name="username" class="userinp" required="required" placeholder="Please enter your username">
+					</div>
+					<div id="pass">
+						<label for="password" class="password"> password:</label>
+							<button class="btn"><i class="fas fa-lock" style="font-size: ; color: green"></i></button><input type="password" name="password" class="passinp" required="required" placeholder="Please enter your password">
+					</div>
+						<footer>
+							<input type="submit" name="done" value="submit" class="ok">
+							<input type="reset" name="cancel" value="reset" class="cancel">
+						<div id="remdiv">
+							<input type="checkbox" name="checkbox" class="rem">
+							<label for="remember" class="remember"> remember me</label>
+						</div>
+							<label for="not yet register" class="reg"> If you are yet to register, kindly<a href="Registration.html"> register here </a></label>
+						</footer>
+				</form>
+			</fieldset>
+	</div>
+</body>
+</html>
