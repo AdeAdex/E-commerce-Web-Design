@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login page</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	 <link href="fontawesome/css/all.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="prac.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="logo">
+			<img src="ade.png">
+		</div>
+		<div class="welcome"> welcome to adex </div>
+		<div class="log">login</div>
+		<div class="container">
+			<form action="/action_page.php">
+				<fieldset>
+					<legend>username</legend>
+						<input type="text" name="username" class="username_inp" required="required" placeholder="Email or Username">
+				</fieldset>
+				<fieldset>
+					<legend>password</legend>
+						<input type="password" name="password" class="password_inp" required="required" placeholder="Password">
+				</fieldset>
+			<div class="forgot_pass"><a href="forgot_password.html" class="forgot_password">forgot password</a></div>
+				<button type="submit" value="Login" class="login_btn">login</button>
+			</form>
+			<div class="signwt_one">OR</div>
+			<div class="sign_type">
+				<a href="www.facebook.com" class="submit"><button class="button_one"><i class="fab fa-facebook-square"></i>Continue with Facebook</button></a>
+				<a href="www.google.com" class="submit"><button class="button_two"><i class="fab fa-google"></i>Continue with Google</button></a>
+				<a href="www.twitter.com" class="submit"><button class="button_three"><i class="fab fa-twitter"></i>Continue with Twitter</button></a>
+			</div>
+			<div class="signwt_two">Not on Adex yet? &nbsp <a href="registration.html" class="sign_up"> Sign up </a></div>
+		</div>
+	</div>
+</body>
+</html>
