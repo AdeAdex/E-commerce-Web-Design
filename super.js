@@ -41,17 +41,6 @@ function carousel() {
 
 
 
-
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic/bulboff.gif"
-  } else {
-    pic = "pic/bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-
 function myFunction() {
   document.getElementById("demo").innerHTML = "You copied text!"
 }
