@@ -9,6 +9,12 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 };
 
+function rmv() {
+  document.getElementById("alert").style.width = "0";
+  document.getElementById("alert").innerHTML = null
+  document.getElementById("under").style.width = "100%"
+}
+
 
 /*setInterval(myTimer);
 
